@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#333">
+  <meta charset="UTF-8">
+  <title>متجري الإلكتروني</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">مرحبًا بك في متجري الإلكتروني</h1>
+  <label for="language">اختر اللغة:</label>
+  <select id="language" onchange="changeLanguage()">
+    <option value="ar">العربية</option>
+    <option value="en">English</option>
+  </select>
+  <button onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
+
+  <div class="section">
+    <h2>إدارة المنتجات</h2>
+    <input type="text" id="product-name" placeholder="اسم المنتج">
+    <input type="text" id="product-price" placeholder="السعر">
+    <button onclick="addProduct()">إضافة المنتج</button>
+  </div>
+
+  <div class="section">
+    <h2>قائمة المنتجات</h2>
+    <div id="product-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
