@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "إصدار أولي لمتجري"
+git branch -M main
+git remote add origin https://github.com/my200222_mystor.git
+git push -u origin main
